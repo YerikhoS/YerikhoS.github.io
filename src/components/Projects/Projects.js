@@ -2,12 +2,15 @@ import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import ProjectCard from "./ProjectCards";
 import Particle from "../Particle";
-import leaf from "../../Assets/Projects/leaf.png";
-import emotion from "../../Assets/Projects/emotion.png";
-import editor from "../../Assets/Projects/codeEditor.png";
-import chatify from "../../Assets/Projects/chatify.png";
-import suicide from "../../Assets/Projects/suicide.png";
-import bitsOfCode from "../../Assets/Projects/blog.png";
+import qpay from "../../Assets/qpay2.jpeg";
+import qapps from "../../Assets/qpay1.jpeg";
+import cp from "../../Assets/z_cp.jpeg";
+import ch from "../../Assets/z_ch.jpeg";
+import bw from "../../Assets/bw.png";
+import ac from "../../Assets/ac_img.png";
+import mf from "../../Assets/z_mf.jpeg";
+
+
 
 function Projects() {
   return (
@@ -23,68 +26,75 @@ function Projects() {
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={chatify}
+              imgPath={qpay}
               isBlog={false}
-              title="Chatify"
-              description="Personal Chat Room or Workspace to share resources and hangout with friends build with react.js, Material-UI, and Firebase. Have features which allows user for realtime messaging, image sharing as well as supports reactions on messages."
-              ghLink="https://github.com/soumyajit4419/Chatify"
-              demoLink="https://chatify-49.web.app/"
+              title="QoinPay"
+              description="Qoinpay is an app that lets users convert cryptocurrency into real-world products and services. It offers a non-custodial wallet for secure asset management and easy token transfers. Users can use crypto for daily needs like mobile credit and lifestyle luxuries like hotel bookings. Identity verification (KYC) is mandatory to comply with regulations"
+              ghLink="https://play.google.com/store/apps/details?id=id.qoin.crypto"
+              demoLink="https://apps.apple.com/id/app/qoinpay/id1629785857"
             />
           </Col>
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={bitsOfCode}
+              imgPath={qapps}
               isBlog={false}
-              title="Bits-0f-C0de"
-              description="My personal blog page build with Next.js and Tailwind Css which takes the content from makdown files and renders it using Next.js. Supports dark mode and easy to write blogs using markdown."
-              ghLink="https://github.com/soumyajit4419/Bits-0f-C0de"
-              demoLink="https://blogs.soumya-jit.tech/"
+              title="Qoin Digital Indonesia"
+              description="The Qoin app is a non-cash payment service provider that can be used anytime and anywhere. Users can securely and conveniently conduct transactions on the Qoin app with just a touch of their fingers, including purchases, bill payments, and more."
+              ghLink="https://play.google.com/store/apps/details?id=id.qoin"
+              demoLink="https://apps.apple.com/id/app/qoin-digital-indonesia/id1603832217"
             />
           </Col>
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={editor}
+              imgPath={bw}
               isBlog={false}
-              title="Editor.io"
-              description="Online code and markdown editor build with react.js. Online Editor which supports html, css, and js code with instant view of website. Online markdown editor for building README file which supports GFM, Custom Html tags with toolbar and instant preview.Both the editor supports auto save of work using Local Storage"
-              ghLink="https://github.com/soumyajit4419/Editor.io"
-              demoLink="https://editor.soumya-jit.tech/"              
+              title="BW Hospitality"
+              description="
+              Search for somewhere to stay in Belitung, Jambi and Jakarta, the app is with you, giving you easy access to find our hotels and book, or look up a reservation, browse photos of the rooms, facilities, and venues, and get exclusive Rate and benefits, all from your mobile phone."
+              ghLink="https://play.google.com/store/apps/details?id=com.bwhospitality"
+              demoLink="https://apps.apple.com/bh/app/bw-hospitality/id1498176065"              
             />
           </Col>
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={leaf}
+              imgPath={ac}
               isBlog={false}
-              title="Plant AI"
-              description="Used the plant disease dataset from Kaggle and trained a image classifer model using 'PyTorch' framework using CNN and Transfer Learning with 38 classes of various plant leaves. The model was successfully able to detect diseased and healthy leaves of 14 unique plants. I was able to achieve an accuracy of 98% by using Resnet34 pretrained model."
-              ghLink="https://github.com/soumyajit4419/Plant_AI"
+              title="AceKids - Kids Learn Math Quiz"
+              description="At AceKids, we understand that learning can sometimes be a challenge for children, but it doesn't have to be. That's why we create educational and enjoyable games, helping children stay motivated and engaged in their learning. With these quizzes for kids, you can have fun while mastering crucial math skills based on the globally renowned Singapore math curriculum."
+              ghLink="https://play.google.com/store/apps/details?id=me.acekids.aptic123"
               demoLink="https://plant49-ai.herokuapp.com/"
             />
           </Col>
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={suicide}
+              imgPath={cp}
               isBlog={false}
-              title="Ai For Social Good"
-              description="Using 'Natural Launguage Processing' for the detection of suicide-related posts and user's suicide ideation in cyberspace  and thus helping in sucide prevention."
-              ghLink="https://github.com/soumyajit4419/AI_For_Social_Good"
-              // demoLink="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley" <--------Please include a demo link here
+              title="Cikarang Presisi"
+              description="Cikarang Presisi is an application serving as a platform for news delivery to the community within the jurisdiction of the Cikarang Regional Police, managed by the police authorities."
+            
             />
           </Col>
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={emotion}
+              imgPath={mf}
               isBlog={false}
-              title="Face Recognition and Emotion Detection"
-              description="Trained a CNN classifier using 'FER-2013 dataset' with Keras and tensorflow backened. The classifier sucessfully predicted the various types of emotions of human. And the highest accuracy obtained with the model was 60.1%.
-              Then used Open-CV to detect the face in an image and then pass the face to the classifer to predict the emotion of a person."
-              ghLink="https://github.com/soumyajit4419/Face_And_Emotion_Detection"
-              // demoLink="https://blogs.soumya-jit.tech/"      <--------Please include a demo link here 
+              title="Moo Foods"
+              description="Moo Foods is an e-commerce application created to facilitate the public in purchasing food products from Moo Foods."
+           
+            />
+          </Col>
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={ch}
+              isBlog={false}
+              title="Cherry Point-Of-Sale Apps"
+              description="The Cherry app serves to streamline the buying and selling process within the Cherry Lounge, ensuring better organization and record-keeping."
+            
             />
           </Col>
         </Row>
